@@ -1,0 +1,8 @@
+110f63d90423de8170c1db7f03b5fd085c75e9be48438b8ee4cb2bd68e0d6e7e  ./build/QMS_Telemetry/ui/dashboard.html
+871c3f86b2e8969dcb1ae0d2e1e270e21f898b385605df9e269491c1930f36f5  ./build/QMS_Telemetry/ui/style.css
+8e02b363e22a87dd88399f2766928b0b7aeeeae03d3b25dd52b62b3fc0aa2020  ./build/QMS_Telemetry/checksums.txt
+8b24e0c140a2d6076f9e07232e2a1d0badee7ed4e8e596e43013b2a00c5641d0  ./build/QMS_Telemetry/main.js
+a31732e09558871f8d0b0e5e01e7eae12ac7701e6f8aa94eaea34f60f517e131  ./build/QMS_Telemetry/manifest.json
+bdd861e2c7a05a1efad0c2a9281da767bfd86e0aab2bddde2980797d985bdd26  ./build/QMS_Telemetry/telemetry/b58_channels.js
+0e5b370999979fd1faffd7e3cd1bb2a3d4215957e9617cc615ea9beea065bb20  ./build/QMS_Telemetry/assets/.DS_Store
+a278b86bebca9ec3d595a0e01f71cc147c7f076f136b401e25b6b97f805e5088  ./build/QMS_Telemetry/assets/images/qms_logo.png

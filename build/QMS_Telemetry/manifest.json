@@ -1,0 +1,10 @@
+{
+  "appId": "com.queenslandmotorsport.telemetry",
+  "name": "QMS Telemetry",
+  "version": "1.0.0",
+  "entryPoint": "src/main.js",
+  "permissions": [
+    "vehicle.can.read",
+    "mgu.display.overlay"
+  ]
+}

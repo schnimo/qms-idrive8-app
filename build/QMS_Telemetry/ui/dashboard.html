@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QMS Telemetry Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="qms-container">
+        <header class="qms-header">
+            <img src="../assets/images/qms_logo.png" alt="Queensland Motorsport Logo" class="brand-logo" />
+            <span class="app-title">QMS Telemetry</span>
+        </header>
+
+        <div class="qms-dashboard">
+            <div class="gauge-card">
+                <span class="label">Boost Pressure</span>
+                <span id="boost-val" class="value">0.0</span>
+                <span class="unit">psi</span>
+            </div>
+            <div class="gauge-card">
+                <span class="label">Oil Temp</span>
+                <span id="oil-val" class="value">0</span>
+                <span class="unit">°C</span>
+            </div>
+            <div class="gauge-card">
+                <span class="label">Ethanol Content</span>
+                <span id="eth-val" class="value">0.0</span>
+                <span class="unit">%</span>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
