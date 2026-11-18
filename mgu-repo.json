@@ -4,7 +4,8 @@
     {
       "id": "qms_telemetry",
       "kind": "app",
-      "path": "."
+      "path": "apps/qms_telemetry",
+      "build": "unit"
     }
   ]
 }
