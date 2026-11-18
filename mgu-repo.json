@@ -4,7 +4,9 @@
     {
       "id": "qms_telemetry",
       "kind": "app",
-      "path": "apps/qms_telemetry"
+      "path": "apps/qms_telemetry",
+      "version": "1.0.0",
+      "url": "https://raw.githubusercontent.com/schnimo/qms-idrive8-app/main/apps/qms_telemetry/dist/QMS_Telemetry_v1.0.0.tar.gz"
     }
   ]
 }
