@@ -1,11 +1,12 @@
 {
   "schema": 1,
-  "components": [
+  "packages": [
     {
-      "id": "qms_telemetry",
-      "kind": "app",
-      "path": ".",
-      "version": "1.0.0"
+      "appId": "com.queenslandmotorsport.telemetry",
+      "name": "QMS Telemetry",
+      "version": "1.0.0",
+      "file": "dist/QMS_Telemetry_v1.0.0.tar.gz",
+      "description": "Live B58 telemetry with custom QMS branding."
     }
   ]
 }
