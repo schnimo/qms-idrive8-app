@@ -1,10 +1,13 @@
 {
   "schema": 1,
   "id": "qms_telemetry",
-  "name": "QMS Telemetry",
+  "title": "Queensland Motorsport",
+  "name": "Queensland Motorsport",
   "version": "1.0.0",
   "description": "Queensland Motorsport Live Telemetry & ECU Monitor",
   "author": "schnimo",
+  "tree": ".",
+  "icon": "icon.png",
   "mguHmi": ["ID8"],
   "entry": "index.html"
 }
