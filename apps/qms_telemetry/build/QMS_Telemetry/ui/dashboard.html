@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QMS Telemetry Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="qms-container">
+        <header class="qms-header">
+            <div class="brand-group">
+                <img src="../assets/images/qms_logo.png" alt="Queensland Motorsport Logo" class="brand-logo" />
+                <div>
+                    <span class="app-title">QMS Telemetry</span>
+                    <span class="sub-title">B58 Custom Calibration Stream</span>
+                </div>
+            </div>
+            <div id="launch-status-badge" class="launch-badge waiting">SYS WARMING</div>
+        </header>
+
+        <div class="qms-dashboard">
+            <div class="gauge-card">
+                <span class="label">Boost Pressure</span>
+                <div class="value-container">
+                    <span id="boost-val" class="value">0.0</span>
+                    <span class="unit">psi</span>
+                </div>
+                <div class="peak-sub">PEAK: <span id="peak-boost" class="peak-val">0.0</span> psi</div>
+            </div>
+            
+            <div class="gauge-card">
+                <span class="label">Oil Temperature</span>
+                <div class="value-container">
+                    <span id="oil-val" class="value">0</span>
+                    <span class="unit">°C</span>
+                </div>
+                <div class="peak-sub">PEAK: <span id="peak-oil" class="peak-val">0</span> °C</div>
+            </div>
+
+            <div class="gauge-card">
+                <span class="label">Ethanol Content</span>
+                <div class="value-container">
+                    <span id="eth-val" class="value">0.0</span>
+                    <span class="unit">%</span>
+                </div>
+                <div class="peak-sub">BLEND RATIO TARGET</div>
+            </div>
+
+            <div class="gauge-card" style="border-left-color: #3fb950;">
+                <span class="label">Telemetry Stream</span>
+                <div class="value-container">
+                    <span class="value" style="font-size: 28px; color: #3fb950; margin-top: 10px;">ONLINE</span>
+                </div>
+                <div class="peak-sub">MGU LIVE CAN BUS MAPPING</div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
