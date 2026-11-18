@@ -4,5 +4,5 @@ a278b86bebca9ec3d595a0e01f71cc147c7f076f136b401e25b6b97f805e5088 *./build/QMS_Te
 9fb69d6503d4b06cf7db37b71b2e8a9050b06ef314f9f921b5a3cb98db388a8b *./build/QMS_Telemetry/main.js
 7ee4ac536ecc5651e2699560ff431136995be052ab03ad92c39512e2265cbb54 *./build/QMS_Telemetry/manifest.json
 7dee8b2ac4da7c8754df2f7228cbf8e395d49e21473e9e3a1a54c041ecfeb4e8 *./build/QMS_Telemetry/telemetry/b58_channels.js
-e07f748381b283d04192482ed3f8f6cc5b6c79729a9aee00995c0656a7b8f847 *./build/QMS_Telemetry/ui/dashboard.html
-76a58e9f187849507d37d3b0dc301171a7125eb91aab10916eb283ed58e5c85e *./build/QMS_Telemetry/ui/style.css
+3967e162891349e01b3f94e1449081098f6f2239fb73c05e694e74a635b6630f *./build/QMS_Telemetry/ui/dashboard.html
+8dc388fd6c72ece57ba9a7525e1a2472395c8ac151ad0040da845caa73298ef0 *./build/QMS_Telemetry/ui/style.css

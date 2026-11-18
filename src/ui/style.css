@@ -3,9 +3,9 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #0d1117;
-    color: #ffffff;
-    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #050507;
+    color: #f0f3f6;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
     overflow: hidden;
 }
 
@@ -14,26 +14,75 @@ body, html {
     flex-direction: column;
     height: 100vh;
     box-sizing: border-box;
+    background: radial-gradient(circle at 50% 0%, #11141d 0%, #050507 70%);
+    border: 2px solid #e3af34; /* QMS Gold Frame Border */
 }
 
 .qms-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 12px;
-    padding: 20px 24px 0 24px;
+    padding: 18px 28px;
+    background: rgba(10, 12, 16, 0.9);
+    border-bottom: 1px solid #21262d;
+}
+
+.brand-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .brand-logo {
-    height: 36px;
+    height: 40px;
     width: auto;
     object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(227, 175, 52, 0.3));
 }
 
 .app-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #c9d1d9;
-    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    font-size: 11px;
+    color: #e3af34;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.launch-badge {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.launch-badge.waiting {
+    background-color: rgba(210, 153, 34, 0.1);
+    color: #d29922;
+    border: 1px solid #d29922;
+}
+
+.launch-badge.ready {
+    background-color: rgba(63, 185, 80, 0.15);
+    color: #3fb950;
+    border: 1px solid #3fb950;
+    box-shadow: 0 0 16px rgba(63, 185, 80, 0.4);
+    animation: pulse-ready 1.5s infinite;
+}
+
+@keyframes pulse-ready {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
 }
 
 .qms-dashboard {
@@ -46,33 +95,70 @@ body, html {
 }
 
 .gauge-card {
-    background: linear-gradient(135deg, #161b22 0%, #21262d 100%);
-    border: 1px solid #30363d;
-    border-radius: 12px;
+    background: linear-gradient(145deg, #0d1117 0%, #161b22 100%);
+    border-left: 4px solid #e3af34; /* QMS Gold Accent Strip */
+    border-top: 1px solid #30363d;
+    border-right: 1px solid #30363d;
+    border-bottom: 1px solid #30363d;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    padding: 20px 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+.gauge-card::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 60px; height: 60px;
+    background: linear-gradient(135deg, transparent 50%, rgba(227, 175, 52, 0.03) 50%);
+    pointer-events: none;
 }
 
 .gauge-card .label {
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     color: #8b949e;
-    margin-bottom: 8px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.gauge-card .value-container {
+    display: flex;
+    align-baseline: baseline;
+    gap: 8px;
 }
 
 .gauge-card .value {
-    font-size: 42px;
-    font-weight: 700;
-    color: #58a6ff;
+    font-size: 48px;
+    font-weight: 900;
+    color: #ffffff;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -1px;
 }
 
 .gauge-card .unit {
-    font-size: 16px;
-    color: #c9d1d9;
+    font-size: 14px;
+    color: #e3af34;
+    font-weight: 700;
+    text-transform: uppercase;
+    align-self: flex-end;
+    margin-bottom: 8px;
+}
+
+.peak-sub {
+    font-size: 11px;
+    color: #8b949e;
     margin-top: 4px;
+    letter-spacing: 0.5px;
+}
+
+.peak-val {
+    color: #c9d1d9;
+    font-weight: 600;
 }
