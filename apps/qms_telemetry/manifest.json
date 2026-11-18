@@ -1,8 +1,6 @@
-cat << 'EOF' > apps/qms_telemetry/manifest.json
 {
   "id": "qms_telemetry",
   "name": "QMS Telemetry",
   "version": "1.0.0",
   "entry": "index.html"
 }
-EOF
