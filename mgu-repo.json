@@ -4,8 +4,7 @@
     {
       "id": "qms_telemetry",
       "kind": "app",
-      "path": "apps/qms_telemetry",
-      "version": "1.0.0"
+      "path": "apps/qms_telemetry"
     }
   ]
 }
