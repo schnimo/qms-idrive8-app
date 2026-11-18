@@ -1,11 +1,10 @@
 {
   "schema": 1,
-  "packages": [
+  "components": [
     {
-      "id": "com.queenslandmotorsport.telemetry",
-      "name": "QMS Telemetry",
-      "version": "1.0.0",
-      "url": "dist/QMS_Telemetry_v1.0.0.tar.gz"
+      "id": "qms_telemetry",
+      "kind": "app",
+      "path": "."
     }
   ]
 }
