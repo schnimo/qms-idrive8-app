@@ -1,10 +1,8 @@
+cat << 'EOF' > apps/qms_telemetry/manifest.json
 {
-  "appId": "com.queenslandmotorsport.telemetry",
+  "id": "qms_telemetry",
   "name": "QMS Telemetry",
   "version": "1.0.0",
-  "entryPoint": "src/main.js",
-  "permissions": [
-    "vehicle.can.read",
-    "mgu.display.overlay"
-  ]
+  "entry": "index.html"
 }
+EOF

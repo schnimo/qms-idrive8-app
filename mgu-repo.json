@@ -1,11 +1,13 @@
+cd ~/Desktop/qms-idrive8-app
+
+cat << 'EOF' > mgu-repo.json
 {
   "schema": 1,
-  "components": [
-    {
-      "id": "qms_telemetry",
+  "components": {
+    "qms_telemetry": {
       "kind": "app",
-      "path": "apps/qms_telemetry",
-      "build": "unit"
+      "path": "apps/qms_telemetry"
     }
-  ]
+  }
 }
+EOF
